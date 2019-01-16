@@ -7,4 +7,8 @@ public class Helper {
         Scanner scanner=new Scanner(System.in);
         return scanner.nextInt();
     }
+    public static int getRandom(int min, int max) {
+        int r = (int) ((max - min) * Math.random()) + min;
+        return r;
+    }
 }
