@@ -8,7 +8,9 @@ public class Helper {
         return scanner.nextInt();
     }
     public static int getRandom(int min, int max) {
-        int r = (int) ((max - min) * Math.random()) + min;
+        int r = (int) ((max - min+1) * Math.random()) + min;
         return r;
     }
 }
+
+
